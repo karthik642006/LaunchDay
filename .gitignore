@@ -147,3 +147,20 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ---- LaunchDay project ----
+.env
+.env.*
+!.env.example
+node_modules/
+launchday.db*
+uploads/
+dist/
+build/
+coverage/
+*.log
+*.pem
+*.key
+*.p12
+id_rsa*
+.DS_Store

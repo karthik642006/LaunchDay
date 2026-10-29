@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LaunchDay — The best new products, every day</title>
+  <meta name="description" content="Discover the best new products, every day.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <link rel="stylesheet" href="/styles.css?v=__APP_VERSION__">
+  <script>window.APP_VERSION = '__APP_VERSION__';</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="LaunchDay home"><img src="/icon.svg" alt="" width="36" height="36"></a>
+      <form class="search" id="search-form" role="search">
+        <svg class="i" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search-input" type="search" placeholder="Search LaunchDay" aria-label="Search">
+      </form>
+      <nav class="links" aria-label="Main">
+        <a href="#/" data-section="/">Launches</a>
+        <a href="#/topics" data-section="/topics">Topics</a>
+        <a href="#/feed" data-section="/feed">For you</a>
+      </nav>
+      <div class="nav" id="nav"></div>
+    </div>
+  </header>
+  <main id="view" class="container" tabindex="-1"></main>
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#/" data-section="/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Launches</span></a>
+    <a href="#/topics" data-section="/topics"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg><span>Topics</span></a>
+    <a href="#/submit" data-section="/submit" class="tab-submit"><span class="tab-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></span><span>Submit</span></a>
+    <a href="#/feed" data-section="/feed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><span>For you</span></a>
+    <a href="#/login" id="tab-me" data-section="/u"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/app.js?v=__APP_VERSION__" defer></script>
+</body>
+</html>
